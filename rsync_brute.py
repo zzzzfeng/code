@@ -4,7 +4,6 @@
 bruteforce rsync with single username and mutli password
 python rsync_brute.py -h host -p path -l username -P pass_file
 """
-
 import os
 import sys
 import getopt
@@ -13,7 +12,6 @@ import time
 import multiprocessing
 import Queue
 import threading
-
 
 queue = Queue.Queue()
 host = ''
