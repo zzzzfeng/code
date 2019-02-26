@@ -19,3 +19,4 @@
 # 子域名
 - sub_domain.py
 - 通过查询接口，增加存活检测
+- 依赖dnspython: sudo pip install dnspython
