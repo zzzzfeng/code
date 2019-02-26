@@ -341,13 +341,13 @@ class Sub_domain(object):
     
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(prog = 'sub_domain.py', usage='%(prog)s [options] [args] usage', description='sub_domain V1.0')
-    parser.add_argument("-d", dest="domain",type=str, help="-d domain,eg: alipay.com")
+    parser = argparse.ArgumentParser(description='子域名检测工具\n#利用现成的接口获取子域名\n#1、https://crt.sh/?q=%.aliyun.com&output=json\n#2、http://api.hackertarget.com/hostsearch/?q=aliyun.com\n#3、https://findsubdomains.com/subdomains-of/aliyun.com\n#4、dns zone transfer')
+    parser.add_argument("-d", dest="domain",type=str, help="eg: alipay.com")
 
     args = parser.parse_args()
     domain = args.domain
     if not domain:
-        logging.error("input the target")
+        parser.print_help()
         exit(1)
 
     file_abspath = os.path.dirname(os.path.abspath(__file__))
