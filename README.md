@@ -15,3 +15,7 @@
 
 # ssh用户名枚举
 - ssh_check_username.py
+
+# 子域名
+- sub_domain.py
+- 通过查询接口，增加存活检测
