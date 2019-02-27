@@ -19,7 +19,7 @@ from xml.dom import minidom
 
 
 class APKCook:
-    def __init__(self, filename, single=False):
+    def __init__(self, filename, single=False, text=False):
         
         self.filename = filename
         self.xml = {}
@@ -38,9 +38,10 @@ class APKCook:
             for i in self.zip.namelist():
                 if i == "AndroidManifest.xml":
                     self.raw_manifest = self.zip.read(i)
-
-        
-        self.xml = minidom.parseString(AXMLPrinter(self.raw_manifest).getBuff())
+        if text:
+            self.xml = minidom.parseString(self.raw_manifest)
+        else:
+            self.xml = minidom.parseString(AXMLPrinter(self.raw_manifest).getBuff())
 
         self.package = self.xml.documentElement.getAttribute("package")
         self.androidversion["Code"] = self.xml.documentElement.getAttribute("android:versionCode")
