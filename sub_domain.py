@@ -73,7 +73,7 @@ class AXFR(object):
                 logging.error("AXFR get domain fail")
                 return []
 
-            json_domain = json.loads('[{}]'.format(api_content.text.replace('}{', '},{')))
+            json_domain = json.loads(api_content.text)
 
             for (key,value) in enumerate(json_domain):
                 self.result.append(value['name_value'])
