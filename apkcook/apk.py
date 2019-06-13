@@ -203,6 +203,9 @@ class APKCook:
                 #未设置exported属性，则检查是否有intent-filter
                 if len(item.getElementsByTagName("intent-filter")) > 0:
                     name = item.getAttribute("android:name")
+            #####新增####临时访问权限
+            elif item.getAttribute("android:grantUriPermissions") == "true":
+                name = item.getAttribute("android:name")
             
             #未开启
             if item.getAttribute("android:enabled") == "false":
