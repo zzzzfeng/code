@@ -4,6 +4,7 @@
 # android脱壳dump-dex.js
 - libart.so/DefineClass大法
 - 实例： android8 com.qihoo.srouter.n300
+- https://github.com/ylcangel/android_poke/tree/master/method2
 
 # webview-jsbridge检测
 - webview.html
