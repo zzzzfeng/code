@@ -1,5 +1,6 @@
 <?php
 //path: /data/data/com.tencent.mm/MicroMsg/{{一串32位的16进制字符串名文件夹}}/appbrand/pkg/xxx.wxapkg
+//pc版微信路径 C:\Users\mifan\Documents\WeChat Files\Applet\wx1e9c4b2a5a93ef76\235
 function unpack_wxapkg($file, $targetDir)
 {
     if (!is_dir($targetDir)){
