@@ -1,5 +1,6 @@
 # 检测apk暴露组件
 - apkcook
+- baseon axmlprinter
 
 # android脱壳dump-dex.js
 - libart.so/DefineClass大法
