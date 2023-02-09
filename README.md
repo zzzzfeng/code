@@ -1,6 +1,8 @@
 # vdexExtractor
 support vdex027 (https://github.com/anestisb/vdexExtractor/pull/72)
 `[ERROR] Unsupported Vdex version`
+https://download.csdn.net/download/haoren_xhf/87431751 (arm64-v8a)
+https://download.csdn.net/download/haoren_xhf/87431753 (x86_64)
 
 # 检测apk暴露组件
 - apkcook
