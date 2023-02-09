@@ -1,3 +1,7 @@
+# vdexExtractor
+support vdex027 (https://github.com/anestisb/vdexExtractor/pull/72)
+`[ERROR] Unsupported Vdex version`
+
 # 检测apk暴露组件
 - apkcook
 - baseon axmlprinter
